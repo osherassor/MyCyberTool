@@ -1,63 +1,101 @@
-## MyCyberTool
+<h1 align="center">🧰 MyCyberTool</h1>
 
-A practical, privacy‑first collection of offensive security and application security utilities for reconnaissance, testing, and analysis. Use it to quickly check security headers, probe CORS and HSTS, fingerprint technologies, enumerate subdomains, inspect DNS/TLS, audit cloud exposures, transform data, and more — all from an intuitive web interface.
+<p align="center">
+  <strong>An offensive-security Swiss Army knife in your browser.</strong><br>
+  Recon, web testing, TLS, cloud, secrets, JWT, CyberChef — all in one privacy-first web app at <a href="https://mycybertool.com">mycybertool.com</a>.
+</p>
 
-## Live Site
-- Visit: [mycybertool.com](https://mycybertool.com)
+<p align="center">
+  <img src="https://img.shields.io/github/stars/osherassor/MyCyberTool?style=for-the-badge&logo=github&color=ffd700" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/osherassor/MyCyberTool?style=for-the-badge&logo=git&color=00d4aa" alt="Last commit">
+  <img src="https://img.shields.io/badge/live-mycybertool.com-ff4081?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Live">
+  <img src="https://img.shields.io/badge/license-as--is-informational?style=for-the-badge" alt="License">
+</p>
 
+<p align="center">
+  <a href="https://mycybertool.com">🌐 Open the live site →</a>
+</p>
 
+---
 
-## What’s Inside
-- **Reconnaissance & Discovery**
-  - Subdomains: Enumerate subdomains using curated wordlists.
-  - RDAP Tool: Query registration data for domains/IPs.
-  - DNS Resolver: Inspect A/AAAA/CNAME/MX/TXT/NS and more.
-  - Tech Fingerprint: Identify frameworks, CMS, libraries, and hosting providers.
-  - IP Reputation: Check basic indicators for IP trustworthiness.
-  - Takeover Checker: Detect potential subdomain takeover risks.
+## What is this?
 
-- **Web Security Testing**
-  - Security Headers: Analyze response headers (CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, etc.).
-  - CORS Checker: Validate CORS behavior across methods/origins.
-  - HSTS Checker: Verify strict transport security configuration and preload readiness.
-  - Clickjacking Checker: Test framing protections and UI redress risks.
-  - 403 Bypass Tester: Try common path/case/verb header variations for access anomalies.
-  - SRI Checker: Generate/verify Subresource Integrity hashes.
-  
-- **TLS & Networking**
-  - TLS Checker: Inspect certificate chain, expiration, and basic configuration signals.
+The thing you wish was a single tab when you're doing security work. Instead of context-switching between online security headers checkers, JWT debuggers, CyberChef, a separate CORS tool, and yet another DNS lookup site — they're all here, in one place, with consistent UX.
 
-- **Cloud & Storage**
-  - Bucket Explorer: Probe public buckets and enumerate contents where permitted.
-  - S3 Audit: Lightweight checks for misconfigurations and exposure patterns.
+**Privacy first:** inputs are processed on the spot. Nothing's stored.
 
-- **Secrets & Sensitive Data**
-  - Secrets Scanner: Scan pages, repos, or text blobs for API keys, tokens, and credentials.
+## ✨ What's inside
 
-- **Data Transformation & Utilities**
-  - CyberChef (embedded): Dozens of transforms for encoding, decoding, encryption, and analysis.
-  - JWT Editor: Decode, inspect, and experiment with JSON Web Tokens.
-  - JSON/XML Tools & Beautifier: Pretty‑print, minify, and convert between formats.
-  - Wordlists: Built‑in lists for discovery, tuning, and testing workflows.
+### 🔎 Reconnaissance & discovery
 
-- **UX Enhancements**
-  - Accessibility: An accessibility widget and checks baked into the UI.
-  - Theme/Language: Dark mode and multilingual UI support.
+| Tool | What it does |
+|---|---|
+| 🌐 **Subdomains** | Enumerate using curated wordlists |
+| 📋 **RDAP** | Modern WHOIS-style registration data for domains and IPs |
+| 🧭 **DNS resolver** | A / AAAA / CNAME / MX / TXT / NS and more |
+| 🧬 **Tech fingerprint** | Identify frameworks, CMS, libraries, hosting |
+| ⚠️ **IP reputation** | Quick trust signals for an IP |
+| 🪤 **Takeover checker** | Spot subdomain takeover risks |
 
-## Philosophy
-- **Privacy‑first**: Inputs are processed just‑in‑time; the tool avoids storing user data.
-- **Transparent**: Clear outputs with actionable guidance rather than opaque scores.
-- **Pragmatic**: Fast checks you can run during triage, validation, or demos.
+### 🛡️ Web security testing
 
-## Responsible Use
-MyCyberTool is intended for ethical security testing and educational purposes. Only test systems you own or are explicitly authorized to assess. You are responsible for complying with all applicable laws and policies.
+| Tool | What it does |
+|---|---|
+| 🪪 **Security headers** | CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy… |
+| 🌍 **CORS checker** | Validate behavior across methods and origins |
+| 🔒 **HSTS checker** | Verify config + preload readiness |
+| 🪟 **Clickjacking checker** | Test framing protections |
+| 🚪 **403 bypass tester** | Common path / case / verb / header tricks |
+| 🪢 **SRI checker** | Generate / verify Subresource Integrity hashes |
 
-## Feedback & Suggestions
-Have an idea or feature request? I welcome recommendations to make MyCyberTool more useful for researchers and engineers.
+### 🔐 TLS & networking
 
-- Contact: LinkedIn — Osher Assor
-- Product: [mycybertool.com](https://mycybertool.com)
+- 📜 **TLS checker** — cert chain, expiration, config signals
 
+### ☁️ Cloud & storage
 
-## License
-Unless stated otherwise, this project’s code and content are provided as‑is with no warranty. If you plan to redistribute or integrate parts of this tool, please review and include applicable notices.
+- 🪣 **Bucket explorer** — probe public buckets, enumerate where permitted
+- 🔍 **S3 audit** — misconfig + exposure pattern checks
+
+### 🕵️ Secrets & sensitive data
+
+- 🔑 **Secrets scanner** — pages, repos, or text blobs for keys / tokens / creds
+
+### 🛠️ Data transformation & utilities
+
+- 🍳 **CyberChef** (embedded) — encoding, decoding, encryption, analysis
+- 🎫 **JWT editor** — decode, inspect, experiment
+- 📐 **JSON / XML tools & beautifier** — pretty-print, minify, convert
+- 📚 **Wordlists** — built-in lists for discovery and tuning
+
+### ✨ UX
+
+- ♿ **Accessibility** — widget + checks baked into every screen
+- 🌗 **Theme + i18n** — dark mode, multilingual
+
+## 🌟 Philosophy
+
+- 🛡️ **Privacy-first** — just-in-time processing, nothing persisted
+- 🧭 **Transparent** — clear outputs with actionable guidance, not opaque scores
+- 🚀 **Pragmatic** — fast checks for triage, validation, and demos
+
+## 🤝 Pairs well with
+
+- 🧪 **[passive-pentest-profiler](https://github.com/osherassor/passive-pentest-profiler)** — Chrome extension for the *passive* side: cookies, JWTs, secrets in JS bundles. MyCyberTool then handles active server-side checks (CORS, 403 bypass, S3 audit).
+- 📚 **[AwesomeWL](https://github.com/osherassor/AwesomeWL)** — the wordlists section uses these.
+- 🌐 **[selfit](https://github.com/osherassor/selfit)** — when you need to *find* the targets first (web service discovery, screenshots, fuzzing), then bring them here for analysis.
+
+## ⚖️ Responsible use
+
+Ethical security testing and education only. Test only what you own or are explicitly authorized to assess. You're responsible for legal + policy compliance.
+
+## 💬 Feedback
+
+Suggestions or feature requests welcome.
+
+- 👤 [Osher Assor](https://www.linkedin.com/in/osher-assor/) on LinkedIn
+- 🌐 [mycybertool.com](https://mycybertool.com)
+
+## 📄 License
+
+Code and content are provided as-is, no warranty. Review and include applicable notices if you redistribute.
